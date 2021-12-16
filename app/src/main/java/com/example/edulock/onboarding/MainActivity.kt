@@ -8,14 +8,12 @@ import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.button.MaterialButton
-import com.example.edulock.HalamanUtama
 import com.example.edulock.R
-
+import com.example.edulock.firebaseauth.Login
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +22,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.statusBarColor = ContextCompat.getColor(this, R.color.white)
         setContentView(R.layout.activity_main)
 
         setOnboardingItems()
@@ -32,13 +29,14 @@ class MainActivity : AppCompatActivity() {
         setCurrentIndicator(0)
 
         if (restorePrefData()) {
-            val intent = Intent(this, HalamanUtama:: class.java).also {
+            val intent = Intent(this, Login:: class.java).also {
                 it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             }
             startActivity(intent)
         }
 
     }
+
     private fun savePrefsData() {
         val pref = applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
         val editor = pref.edit()
@@ -46,10 +44,8 @@ class MainActivity : AppCompatActivity() {
         editor.apply()
     }
 
-
     private fun restorePrefData(): Boolean {
-        val pref =
-            applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
+        val pref = applicationContext.getSharedPreferences("myPrefs", MODE_PRIVATE)
         return pref.getBoolean("isIntroOpened", false)
     }
 
@@ -89,7 +85,7 @@ class MainActivity : AppCompatActivity() {
             if (onboardingViewPager.currentItem + 1 < onboardingItemsAdapter.itemCount ) {
                 onboardingViewPager.currentItem += 1
             } else {
-                val intent = Intent(this, HalamanUtama:: class.java).also {
+                val intent = Intent(this, Login:: class.java).also {
                     it.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 }
                 startActivity(intent)
@@ -145,11 +141,12 @@ class MainActivity : AppCompatActivity() {
             }
         }
         if (position == onboardingItemsAdapter.itemCount - 1){
-            findViewById<MaterialButton>(R.id.buttonNext).text = "Get Started"
+            "Get Started".also { findViewById<MaterialButton>(R.id.buttonNext).text = it }
             findViewById<TextView>(R.id.textSkip).visibility = View.INVISIBLE
         } else {
             findViewById<TextView>(R.id.textSkip).visibility = View.VISIBLE
-            findViewById<MaterialButton>(R.id.buttonNext).text = "Next"
+            "Next".also { findViewById<MaterialButton>(R.id.buttonNext).text = it }
         }
     }
+
 }

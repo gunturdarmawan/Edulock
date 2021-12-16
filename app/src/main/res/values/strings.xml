@@ -13,4 +13,34 @@
     <string name="login_failed">"Login failed"</string>
     <string name="login">Login</string>
     <string name="ini_ruang_utama">Ini Ruang Utama</string>
+    <string name="edulock">EduLock</string>
+    <string name="mengatur_penggunaan_aplikasi_untuk_anak_dengan_edukasi">Mengatur penggunaan aplikasi untuk anak dengan edukasi.</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="daftar_di_sini">Daftar di Sini</string>
+    <string name="daftar">Daftar</string>
+    <string name="logout">Logout</string>
+    <string name="home_page_edulock">Home Page EduLock</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="silakan_isi_data_data_di_bawah_dengan_benar">Silakan isi data-data di bawah dengan benar.</string>
+    <string name="email">Email</string>
+    <string name="simpan_dan_lanjut">Simpan dan Lanjut</string>
+    <string name="select">Jumlah Anak</string>
+    <string-array name="jumlahAnak">
+        <item>Kelas 1 SD</item>
+        <item>Kelas 2 SD</item>
+        <item>Kelas 3 SD</item>
+        <item>Kelas 4 SD</item>
+        <item>Kelas 5 SD</item>
+        <item>Kelas 6 SD</item>
+    </string-array>
+    <string-array name="jenKel">
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textview">TextView</string>
+    <string name="nama_anak">nama anak</string>
+    <string name="simpan_data_anak">Simpan Data Anak</string>
 </resources>

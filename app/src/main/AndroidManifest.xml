@@ -5,13 +5,34 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo_splash"
-        android:label="@string/app_name"
         android:roundIcon="@drawable/indicator_inactive_background"
         android:supportsRtl="true"
         android:theme="@style/Theme.Edulock">
+
         <activity
-            android:name=".HalamanUtama"
-            android:exported="true" />
+            android:name=".combine.Unlock"
+            android:exported="false" />
+        <activity
+            android:name=".combine.EditData"
+            android:exported="false" />
+        <activity
+            android:name=".combine.Soal"
+            android:exported="false" />
+        <activity
+            android:name=".combine.ChooseUser"
+            android:exported="false" />
+        <activity
+            android:name=".lockapp.LockApp"
+            android:exported="false" />
+        <activity
+            android:name=".firebaseauth.Login"
+            android:exported="false" />
+        <activity
+            android:name=".firebaseauth.RegisterKid"
+            android:exported="false" />
+        <activity
+            android:name=".firebaseauth.Register"
+            android:exported="false" />
         <activity
             android:name=".onboarding.MainActivity"
             android:exported="true" />
