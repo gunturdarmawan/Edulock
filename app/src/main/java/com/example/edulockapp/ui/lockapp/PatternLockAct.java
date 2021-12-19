@@ -20,6 +20,7 @@ import com.andrognito.patternlockview.PatternLockView;
 import com.andrognito.patternlockview.listener.PatternLockViewListener;
 import com.andrognito.patternlockview.utils.PatternLockUtils;
 import com.example.edulockapp.R;
+import com.example.edulockapp.foregroundservice.MainActivity;
 import com.example.edulockapp.model.Password;
 import com.example.edulockapp.services.BackgroundManager;
 import com.example.edulockapp.utils.Utils;
@@ -157,7 +158,7 @@ public class PatternLockAct extends AppCompatActivity {
 
     public void startAct() {
         if (getIntent().getStringExtra("Broadcast_receiver") == null){
-            startActivity(new Intent(this, LockApp.class));
+            startActivity(new Intent(this, MainActivity.class));
         }
         finish();
     }

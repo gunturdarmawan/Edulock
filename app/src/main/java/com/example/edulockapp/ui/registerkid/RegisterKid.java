@@ -8,26 +8,18 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.edulockapp.MainActivity;
 import com.example.edulockapp.R;
-import com.example.edulockapp.ui.auth.Login;
-import com.example.edulockapp.ui.auth.Register;
 import com.example.edulockapp.ui.lockapp.PatternLockAct;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.ktx.Firebase;
 
 public class RegisterKid extends AppCompatActivity {
 

@@ -14,15 +14,17 @@
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.403125" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable/dragable.xml" value="0.403125" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_foreground.xml" value="0.3736413043478261" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_intro.xml" value="0.379981884057971" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_lockapp.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_login.xml" value="0.37681159420289856" />
-        <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_main.xml" value="0.379981884057971" />
+        <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_pattern_lock.xml" value="0.4" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_quiz.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_quiz_lock.xml" value="0.3804347826086957" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_register.xml" value="0.4" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_register_kid.xml" value="0.37318840579710144" />
+        <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/layout_apps.xml" value="0.3736413043478261" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.3836050724637681" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/layout_screen.xml" value="0.264" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/list_item.xml" value="0.37318840579710144" />

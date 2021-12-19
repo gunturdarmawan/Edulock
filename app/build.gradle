@@ -29,6 +29,8 @@ android {
 }
 
 dependencies {
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.andrognito.patternlockview:patternlockview:1.0.0'
     implementation 'com.shuhart.stepview:stepview:1.5.1'

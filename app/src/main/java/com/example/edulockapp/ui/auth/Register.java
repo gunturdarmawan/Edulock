@@ -20,7 +20,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.edulockapp.MainActivity;
+import com.example.edulockapp.foregroundservice.MainActivity;
 import com.example.edulockapp.R;
 import com.example.edulockapp.ui.registerkid.RegisterKid;
 import com.google.android.gms.tasks.OnCompleteListener;

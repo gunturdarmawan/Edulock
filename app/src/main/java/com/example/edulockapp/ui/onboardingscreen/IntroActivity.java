@@ -12,7 +12,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-import com.example.edulockapp.MainActivity;
 import com.example.edulockapp.R;
 import com.example.edulockapp.ui.auth.Login;
 import com.example.edulockapp.ui.auth.Register;

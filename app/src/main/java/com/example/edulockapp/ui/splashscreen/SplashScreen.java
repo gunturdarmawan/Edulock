@@ -6,7 +6,6 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.edulockapp.MainActivity;
 import com.example.edulockapp.R;
 import com.example.edulockapp.ui.onboardingscreen.IntroActivity;
 
