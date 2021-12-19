@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EduLock App</string>
+    <string name="edulock">Edulock</string>
+    <string name="mengatur_penggunaan_aplikasi_untuk_anak_dengan_edukasi">Mengatur penggunaan aplikasi untuk anak dengan Edukasi</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">login</string>
+    <string name="daftar">Daftar</string>
+    <string name="bergabung_menjadi_bagian_orangtua_hebat">Bergabung menjadi bagian Orangtua hebat</string>
+    <string name="email">Email</string>
+    <string name="_9_x_12_4_10">9 x (12:4) + 10 = ?</string>
+    <string name="jawab_soal_dengan_benar_untuk_membuka_aplikasi">Jawab soal dengan benar untuk membuka Aplikasi</string>
+    <string name="ini_bottom_sheet">ini Bottom Sheet</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    tools:context=".ui.lockapp.PatternLockAct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/custom_color_primary"
+        android:gravity="center">
+
+        <com.shuhart.stepview.StepView
+            android:id="@+id/step_view"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            app:sv_animationType="All"
+            app:sv_stepPadding="12dp"
+            app:sv_steps="@array/steps" />
+
+        <LinearLayout
+            android:id="@+id/normal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_lock_24" />
+
+        <TextView
+            android:id="@+id/status_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:textSize="20sp" />
+
+        <com.andrognito.patternlockview.PatternLockView
+            android:id="@+id/pattern_view"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_margin="5dp"
+            app:correctStateColor="@color/purple_200"
+            app:dotCount="3"
+            app:dotNormalSize="10sp"
+            app:dotSelectedSize="12dp"
+            app:normalStateColor="@color/black"
+            app:pathWidth="8dp"
+            app:wrongStateColor="@color/teal_200" />
+
+    </LinearLayout>
+
+</RelativeLayout>

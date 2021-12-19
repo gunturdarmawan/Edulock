@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "816890636345",
+    "project_id": "edulock-app",
+    "storage_bucket": "edulock-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816890636345:android:21f766687c2c3aec7805e8",
+        "android_client_info": {
+          "package_name": "com.example.edulockapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816890636345-993ss2bq1clhmol9io7ubjdtp2at9kpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBa18HNeWaABuvsi7BoqHlhZ4O0ms4dFY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816890636345-993ss2bq1clhmol9io7ubjdtp2at9kpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

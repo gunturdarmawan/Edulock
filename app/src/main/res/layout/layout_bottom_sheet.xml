@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomSheetContainer"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dragable"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/success"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yeey, berhasil!"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ibm_bold"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aplikasi sekarang sudah bisa dibuka, gunakan smartphone sewajarnya dan jangan lupa untuk belajar!"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/darker"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/bukaAplikasiAnak"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/ibm_semibold"
+        android:text="Buka Aplikasi"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="16sp"/>
+
+</LinearLayout>

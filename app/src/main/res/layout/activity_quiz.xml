@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.quiz.Quiz"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Soal Edukasi"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/align"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_regular"
+        android:textColor="@color/custom_color_text_secondary"
+        android:text="Jawab 2 soal dengan benar berturut-turut untuk membuka aplikasi"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/step_quiz"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="5dp"
+        app:sv_typeface="@font/roboto_italic"
+        app:sv_nextStepCircleEnabled="true"
+        app:sv_nextStepCircleColor="@color/gray"
+        app:sv_selectedCircleColor="@color/custom_color_secondary"
+        app:sv_selectedTextColor="@color/custom_color_primary"
+        app:sv_stepLineWidth="1dp"
+        app:sv_stepPadding="4dp"
+        app:sv_nextTextColor="@color/dark"
+        app:sv_nextStepLineColor="@color/custom_color_secondary"
+        app:sv_doneCircleColor="@color/green"
+        app:sv_doneStepLineColor="@color/custom_color_secondary"
+        app:sv_doneCircleRadius="15dp"
+        app:sv_selectedCircleRadius="15dp"
+        app:sv_selectedStepNumberColor="@color/custom_color_primary"
+        app:sv_stepViewStyle="@style/StepView"
+        app:sv_doneStepMarkColor="@color/white"
+        app:sv_stepNumberTextSize="14sp"
+        app:sv_animationType="All"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/align" />
+
+    <TextView
+        android:id="@+id/align2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/custom_color_text_secondary"
+        android:text="Soal"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/container_soal"
+        app:layout_constraintTop_toBottomOf="@+id/step_quiz" />
+
+    <LinearLayout
+        android:id="@+id/container_soal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:background="@drawable/background_soal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/align2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_question"
+            android:text="Output soal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnA"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/ibm_semibold"
+        android:text="Jawaban A"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/container_soal"
+        app:layout_constraintTop_toBottomOf="@+id/container_soal"
+        />
+
+    <Button
+        android:id="@+id/btnB"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/ibm_semibold"
+        android:text="Jawaban B"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/container_soal"
+        app:layout_constraintTop_toBottomOf="@+id/container_soal"
+        />
+
+    <Button
+        android:id="@+id/btnD"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/ibm_semibold"
+        android:text="Jawaban C"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/container_soal"
+        app:layout_constraintTop_toBottomOf="@+id/btnA"
+        />
+
+    <Button
+        android:id="@+id/btnC"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/ibm_semibold"
+        android:text="Jawaban D"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/container_soal"
+        app:layout_constraintTop_toBottomOf="@+id/btnB"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
