@@ -1,6 +1,6 @@
 # EduLock.App_1.0.0
-versi pertama
+Versi 1.0.0
+Brussel Team.
 
-Masih Bnyak fitur yang belum dibuat dan beberapa bug masih ada.
 
-[Team Brussel.pdf](https://github.com/gunturdarmawan/EduLock.App_1.0.0/files/7740734/Team.Brussel.pdf)
+![Team Brussel](https://user-images.githubusercontent.com/72971062/146674103-db75ec04-044f-41dc-b9b8-fcbabd6c3590.png)
