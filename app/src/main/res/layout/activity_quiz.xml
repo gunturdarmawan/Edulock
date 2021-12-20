@@ -66,6 +66,50 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/align" />
 
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/circle"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/circle"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/align"/>
+
+    <TextView
+        android:id="@+id/persentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="70%"
+        android:textSize="30sp"
+        android:fontFamily="@font/ibm_bold"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/step_quiz"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/title_percent"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Persentase berhasil dalam menjawab soal"
+        android:textAlignment="center"
+        android:textColor="@color/custom_color_text_secondary"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/container_soal" />
+
     <TextView
         android:id="@+id/align2"
         android:layout_width="wrap_content"
@@ -163,5 +207,21 @@
         app:layout_constraintEnd_toEndOf="@id/container_soal"
         app:layout_constraintTop_toBottomOf="@+id/btnB"
         />
+
+    <Button
+        android:id="@+id/bukaAplikasi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/rounded"
+        android:fontFamily="@font/ibm_semibold"
+        android:visibility="invisible"
+        android:text="Buka Aplikasi"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="17sp"
+         app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

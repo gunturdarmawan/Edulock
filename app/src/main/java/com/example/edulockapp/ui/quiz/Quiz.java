@@ -4,6 +4,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.annotation.SuppressLint;
 import android.content.ComponentName;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,6 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.edulockapp.R;
 import com.example.edulockapp.services.BackgroundManager;
 import com.example.edulockapp.utils.Utils;
@@ -28,12 +30,13 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Quiz extends AppCompatActivity implements View.OnClickListener  {
-    Button btnA, btnB, btnC , btnD , bukaAppAnak;
+    Button btnA, btnB, btnC , btnD , bukaAppAnak , bukaApp;
     LinearLayout hideQuestion;
-    TextView tv_question, titleQuiz, descQuiz, titleSoal;
+    TextView tv_question, titleQuiz, descQuiz, titleSoal, percentPoint, titlePercent;
     StepView stepQuiz;
-    Integer countCorrect;
-    Integer finishQuiz;
+    Integer countCorrect , countIncorrect, finishQuiz, totalCount ;
+    Integer percentage;
+    LottieAnimationView circlePoint;
 
     private Question question = new Question();
 
@@ -48,6 +51,9 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener  {
 
         random = new Random();
         countCorrect = 0;
+        countIncorrect = 0;
+        totalCount = 0;
+        percentage = 0;
         finishQuiz = 2;
 
         btnA = findViewById(R.id.btnA);
@@ -69,6 +75,11 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener  {
         hideQuestion = findViewById(R.id.container_soal);
         bukaAppAnak = findViewById(R.id.bukaAplikasiAnak);
 
+        bukaApp = findViewById(R.id.bukaAplikasi);
+        titlePercent = findViewById(R.id.title_percent);
+        percentPoint = findViewById(R.id.persentage);
+        circlePoint = findViewById(R.id.circle);
+
         stepQuiz = findViewById(R.id.step_quiz);
         tv_question = findViewById(R.id.tv_question);
 
@@ -86,6 +97,14 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener  {
                 .stepsNumber(3)
                 .animationDuration(getResources().getInteger(android.R.integer.config_shortAnimTime))
                 .commit();
+
+        bukaApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startAct();
+            }
+        });
+
     }
 
     @Override
@@ -101,6 +120,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener  {
                     NextQuestion(random.nextInt(questionLength));
                     stepQuiz.go(0,true);
                     resetPoint();
+                    addPointIncorrect();
                 }
                 break;
 
@@ -113,6 +133,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener  {
                     NextQuestion(random.nextInt(questionLength));
                     stepQuiz.go(0,true);
                     resetPoint();
+                    addPointIncorrect();
                 }
                 break;
 
@@ -125,6 +146,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener  {
                     NextQuestion(random.nextInt(questionLength));
                     stepQuiz.go(0,true);
                     resetPoint();
+                    addPointIncorrect();
                 }
                 break;
 
@@ -137,6 +159,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener  {
                     NextQuestion(random.nextInt(questionLength));
                     stepQuiz.go(0,true);
                     resetPoint();
+                    addPointIncorrect();
                 }
                 break;
         }
@@ -174,12 +197,24 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener  {
         countCorrect +=1;
     }
 
+    private void addPointIncorrect(){
+        countIncorrect +=1;
+    }
+
     private void resetPoint(){
         countCorrect = 0;
     }
 
+    @SuppressLint("SetTextI18n")
     private void checkCorrectPoint(){
         if(countCorrect.equals(finishQuiz)){
+
+            totalCount = finishQuiz+ countIncorrect;
+            
+            percentage = (2*10/totalCount)*10;
+            percentPoint.setText(String.valueOf(percentage) + "%");
+//            percentPoint.setText(String.valueOf(percentage));
+
             stepQuiz.done(true);
             BackgroundManager.getInstance().init(this).startAlarmManager();
             showBottomSheet();
@@ -208,6 +243,11 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener  {
         descQuiz.setText("Kamu berhasil membuka aplikasi dengan menjawab 2 soal benar, Berturut-turut.");
         titleSoal.setVisibility(View.INVISIBLE);
         hideQuestion.setVisibility(View.INVISIBLE);
+
+        bukaApp.setVisibility(View.VISIBLE);
+        titlePercent.setVisibility(View.VISIBLE);
+        percentPoint.setVisibility(View.VISIBLE);
+        circlePoint.setVisibility(View.VISIBLE);
     }
 
     private void showBottomSheet(){
