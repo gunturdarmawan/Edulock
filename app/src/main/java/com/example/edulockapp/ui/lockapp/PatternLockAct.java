@@ -36,6 +36,7 @@ public class PatternLockAct extends AppCompatActivity {
     RelativeLayout relativeLayout;
     Password utilsPassword;
     String userPassword;
+    PatternLockView pattern;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +74,7 @@ public class PatternLockAct extends AppCompatActivity {
         status_password = findViewById(R.id.status_password);
         utilsPassword = new Password(this);
         status_password.setText(utilsPassword.STATUS_FIRST_STEP);
+        pattern = findViewById(R.id.pattern_view);
 
         if(utilsPassword.getPassword() == null){
             normalLayout.setVisibility(View.GONE);
@@ -86,6 +88,7 @@ public class PatternLockAct extends AppCompatActivity {
             int backColor = ResourcesCompat.getColor(getResources(), R.color.custom_color_primary, null);
             relativeLayout.setBackgroundColor(backColor);
             status_password.setTextColor(Color.WHITE);
+            pattern.setNormalStateColor(Color.WHITE);
         }
     }
 

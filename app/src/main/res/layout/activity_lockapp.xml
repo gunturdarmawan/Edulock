@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+    android:background="@drawable/background_lockapp"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,14 +18,15 @@
             android:background="@color/custom_color_primary"
             android:id="@+id/toolbar"
             android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@color/white"
+        android:layout_margin="15dp"
+        android:background="@drawable/background_soal"
         android:id="@+id/layout_permission">
 
         <LinearLayout
@@ -68,6 +69,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
+            android:layout_margin="10dp"
             android:text="Aktifkan"
             android:background="@drawable/btn_on_click"
             android:drawableRight="@drawable/ic_baseline_play_arrow_24"

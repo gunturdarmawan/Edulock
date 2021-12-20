@@ -11,7 +11,7 @@ import com.example.edulockapp.broadcast.RestartServiceWhenStoped;
 
 public class BackgroundManager {
 
-    private static final int period = 159; //15 minutes
+    private static final int period = 2*10000; //15 minutes
     private static  final int ALARM_ID= 159;
 
     private static  BackgroundManager instance;

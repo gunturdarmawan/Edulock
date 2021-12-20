@@ -5,14 +5,18 @@
       <map>
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable-v24/background_soal.xml" value="0.403125" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable-v24/btn_on_click.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable-v24/ic_baseline_lock_24.xml" value="0.403125" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable-v24/ic_lock.xml" value="0.403125" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable-v24/indicator_default.xml" value="0.403125" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable-v24/indicator_selected.xml" value="0.403125" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable-v24/indicator_selector.xml" value="0.403125" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable-v24/rounded.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable/background_lockapp.xml" value="0.403125" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable/bottom_sheet_background.xml" value="0.403125" />
+        <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable/container_list_app.xml" value="0.403125" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable/dragable.xml" value="0.403125" />
+        <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.403125" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_foreground.xml" value="0.3736413043478261" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_intro.xml" value="0.379981884057971" />
@@ -24,7 +28,7 @@
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_quiz_lock.xml" value="0.3804347826086957" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_register.xml" value="0.4" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/activity_register_kid.xml" value="0.37318840579710144" />
-        <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/layout_apps.xml" value="0.3736413043478261" />
+        <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/layout_apps.xml" value="0.4" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/layout_bottom_sheet.xml" value="0.3836050724637681" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/layout_screen.xml" value="0.264" />
         <entry key="..\:/Users/guntu/AndroidStudioProjects/EduLockApp/app/src/main/res/layout/list_item.xml" value="0.37318840579710144" />
