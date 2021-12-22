@@ -93,7 +93,6 @@ public class PatternLockAct extends AppCompatActivity {
     }
 
     private void initPatternListener() {
-
         PatternLockView patternLockView = findViewById(R.id.pattern_view);
         patternLockView.addPatternLockListener(new PatternLockViewListener() {
             @Override

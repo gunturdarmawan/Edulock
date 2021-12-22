@@ -33,7 +33,6 @@ public class ServiceApplock extends IntentService {
 
     @Override
     public int onStartCommand(@Nullable Intent intent, int flags, int startId) {
-
         runApplock();
         return super.onStartCommand(intent, flags, startId);
     }

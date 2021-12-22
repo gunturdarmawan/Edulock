@@ -19,8 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EduLockApp">
 
-        <activity
-            android:name=".ui.lockapp.LockApp"
+        <activity android:name=".ui.lockapp.LastLock"
+            android:exported="false" />
+        <activity android:name=".ui.lockapp.LockApp"
             android:exported="false" />
         <activity android:name=".ui.registerkid.RegisterKid"
             android:exported="false"/>

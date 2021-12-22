@@ -11,14 +11,14 @@ import com.example.edulockapp.broadcast.RestartServiceWhenStoped;
 
 public class BackgroundManager {
 
-    private static final int period = 2*10000; //15 minutes
-    private static  final int ALARM_ID= 159;
+    private static final int period = 15*10000;
+    private static final int fastPeriod = 100;
+    private static  final int ALARM_ID= 159874;
 
     private static  BackgroundManager instance;
     private Context context;
 
     public static BackgroundManager getInstance() {
-
         if(instance == null)
             instance = new BackgroundManager();
         return instance;
@@ -67,6 +67,13 @@ public class BackgroundManager {
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, ALARM_ID, intent, 0);
         AlarmManager manager = (AlarmManager)context.getSystemService(context.ALARM_SERVICE);
         manager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+period, pendingIntent);
+    }
+
+    public void fastAlarmManager(){
+        Intent intent = new Intent(context, RestartServiceWhenStoped.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, ALARM_ID, intent, 0);
+        AlarmManager manager = (AlarmManager)context.getSystemService(context.ALARM_SERVICE);
+        manager.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+fastPeriod, pendingIntent);
     }
 
     public void stopAlarm(){

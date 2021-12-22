@@ -19,8 +19,8 @@ import io.paperdb.Paper;
 
 public class Utils {
 
-    private String EXTRA_LAST_APP = "EXTRA_LAST_APP";
-    private Context context;
+    private final String EXTRA_LAST_APP = "EXTRA_LAST_APP";
+    private final Context context;
 
     public Utils(Context context) {
         this.context = context;

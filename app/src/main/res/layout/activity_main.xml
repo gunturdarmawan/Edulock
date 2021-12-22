@@ -42,28 +42,52 @@
                 />
 
         <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/robot"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_marginBottom="100dp"
-            app:lottie_rawRes="@raw/edulock_robot"
+            android:id="@+id/launch"
+            android:layout_width="342dp"
+            android:layout_height="459dp"
+            android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toTopOf="@id/btn_setlockapp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:layout_constraintBottom_toTopOf="@id/btn_setlockapp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:lottie_rawRes="@raw/circle_waves" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/locked"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="24dp"
+            android:layout_width="219dp"
+            android:layout_height="229dp"
+            android:layout_marginTop="136dp"
+            android:layout_marginEnd="96dp"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:visibility="invisible"
             app:lottie_autoPlay="true"
             app:lottie_rawRes="@raw/lock" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lock_warning"
+            android:layout_width="122dp"
+            android:layout_height="121dp"
+            android:layout_marginTop="184dp"
+            android:layout_marginEnd="144dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/warning_yellow" />
+
+        <TextView
+            android:id="@+id/statusEdulock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ibm_semibold"
+            android:textSize="21sp"
+            android:text="Edulock Tidak Aktif"
+            android:layout_marginBottom="110dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btn_setlockapp"/>
 
         <Button
             android:id="@+id/btn_nonactive"

@@ -84,7 +84,6 @@ public class LockApp extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         int id = item.getItemId();
-
         if(id == android.R.id.home)
             finish();
             return true;
@@ -104,7 +103,6 @@ public class LockApp extends AppCompatActivity {
             } else {
                 layout_permission.setVisibility(View.VISIBLE);
             }
-
         }
         super.onResume();
     }
