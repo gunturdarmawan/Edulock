@@ -3,4 +3,5 @@ Versi 1.0.0
 Negatice Team.
 
 
-![Team Brussel](https://user-images.githubusercontent.com/72971062/146674103-db75ec04-044f-41dc-b9b8-fcbabd6c3590.png)
+![GunturDarmawan_Portofolio_Academy pdf](https://github.com/gunturdarmawan/Relock.App_1.0.0/assets/72971062/bea9758d-4199-4eb8-8f86-673d490d6041)
+
