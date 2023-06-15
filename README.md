@@ -1,4 +1,4 @@
-# Relock.App_1.0.0
+# Edulock.App_1.0.0
 Versi 1.0.0
 Negatice Team.
 
